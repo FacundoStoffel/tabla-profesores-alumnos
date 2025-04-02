@@ -1,9 +1,10 @@
 {
     "database": {
-        "host": "localhost",
+        "host": "yamabiko.proxy.rlwy.net",
         "user": "root",
-        "password": "root",
-        "database": "profesores"
+        "password": "DyHjwLXbSYvcYyOOazkQKavMtOyXgTnP",
+        "database": "railway",
+        "port": "39649"
     },
     "server": {
         "port": 8080
