@@ -1,5 +1,5 @@
 require('rootpath')();
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const config = require("config.json");
 
 

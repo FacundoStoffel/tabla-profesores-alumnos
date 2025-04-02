@@ -1,3 +1,5 @@
 2025-04-01 21:32:56 [SAVED] c:\Webs\tabla-profesores-alumnos\BDD.sql
 2025-04-01 21:35:17 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\config.json
 2025-04-01 21:38:42 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\config.json
+2025-04-01 21:47:04 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\model\alumnos.js
+2025-04-01 21:47:19 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\model\profesores.js
