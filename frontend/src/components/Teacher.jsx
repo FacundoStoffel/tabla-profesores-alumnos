@@ -33,7 +33,7 @@ export default function Teacher() {
     };
 
     try {
-      const res = await fetch("http://localhost:8080/teacher", parametros);
+      const res = await fetch("https://tabla-profesores-alumnos.onrender.com/teacher", parametros);
       const result = await res.json();
 
       if (res.ok) {
@@ -75,11 +75,11 @@ export default function Teacher() {
   // Función para enviar datos del nuevo profesor (POST)
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let url = "http://localhost:8080/teacher/create";
+    let url = "https://tabla-profesores-alumnos.onrender.com/teacher/create";
     let method = "POST";
 
     if (isEditing) {
-      url = `http://localhost:8080/teacher/edit/${selectedDNI}`;
+      url = `https://tabla-profesores-alumnos.onrender.com/teacher/edit/${selectedDNI}`;
       method = "PUT";
     }
 
@@ -112,7 +112,7 @@ export default function Teacher() {
     if (!window.confirm("Estás seguro de eliminar a este profesor?")) return;
 
     try {
-      const res = await fetch(`http://localhost:8080/teacher/delete/${dni}`, {
+      const res = await fetch(`https://tabla-profesores-alumnos.onrender.com/teacher/delete/${dni}`, {
         method: "DELETE",
       });
       const result = await res.json();
