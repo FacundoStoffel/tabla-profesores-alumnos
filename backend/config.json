@@ -4,7 +4,7 @@
         "user": "root",
         "password": "DyHjwLXbSYvcYyOOazkQKavMtOyXgTnP",
         "database": "railway",
-        "port": "39649"
+        "port": 39649
     },
     "server": {
         "port": 8080
