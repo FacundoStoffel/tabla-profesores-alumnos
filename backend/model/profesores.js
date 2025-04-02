@@ -15,7 +15,7 @@ connection.connect((err) => {
 
 
 profesores_db.getAll = function (funCallback){
-    $query = 'SELECT CONCAT(apellido, " ", nombre)AS nombre_completo, dni, materia from profesor';
+    $query = 'SELECT CONCAT(apellido, " ", nombre)AS nombre_completo, dni, materia from PROFESOR';
     connection.query($query, function(err, rows){
         if(err){
             funCallback({
@@ -36,7 +36,7 @@ profesores_db.create = function (dato, funCallback){
         dato.materia
     ];
 
-    $query = 'INSERT INTO profesor (apellido, nombre, dni, materia) VALUES (?,?,?,?)';
+    $query = 'INSERT INTO PROFESOR (apellido, nombre, dni, materia) VALUES (?,?,?,?)';
 
     connection.query($query, params, (err, rows) =>{
         if(err){
@@ -71,7 +71,7 @@ profesores_db.edit = function (dato, dni, funCallback){
 
     ];
 
-    $query='UPDATE profesor set apellido=?, nombre=?, materia=? WHERE dni=?'
+    $query='UPDATE PROFESOR set apellido=?, nombre=?, materia=? WHERE dni=?'
 
     connection.query($query, params, (err, rows)=>{
         if(err){
@@ -98,7 +98,7 @@ profesores_db.edit = function (dato, dni, funCallback){
 profesores_db.delete = function (dni, funCallback) {
 
 
-    $query = 'DELETE from profesor WHERE dni=?';
+    $query = 'DELETE from PROFESOR WHERE dni=?';
 
     connection.query($query, dni, (err, rows) => {
         if (err) {

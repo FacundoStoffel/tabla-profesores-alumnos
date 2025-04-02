@@ -5,3 +5,4 @@
 2025-04-01 21:47:19 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\model\profesores.js
 2025-04-01 21:54:21 [SAVED] c:\Webs\tabla-profesores-alumnos\frontend\src\components\Teacher.jsx
 2025-04-01 21:54:42 [SAVED] c:\Webs\tabla-profesores-alumnos\frontend\src\components\Teacher.jsx
+2025-04-01 21:58:43 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\model\profesores.js
