@@ -44,7 +44,7 @@ export default function Students() {
     };
 
     try {
-      const res = await fetch("http://localhost:8080/students", parametros);
+      const res = await fetch("https://tabla-profesores-alumnos.onrender.com/students", parametros);
       const result = await res.json();
 
       if (res.ok) {
@@ -72,7 +72,7 @@ export default function Students() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let url = `http://localhost:8080/students/edit/${selectedDNI}`;
+    let url = `https://tabla-profesores-alumnos.onrender.com/students/edit/${selectedDNI}`;
     let method = "PUT";
 
     try {
@@ -100,7 +100,7 @@ export default function Students() {
     if (!window.confirm("Estás seguro de eliminar a este alumno?")) return;
 
     try {
-      const res = await fetch(`http://localhost:8080/students/delete/${dni}`, {
+      const res = await fetch(`https://tabla-profesores-alumnos.onrender.com/students/delete/${dni}`, {
         method: "DELETE",
       });
       const result = await res.json();

@@ -7,3 +7,5 @@
 2025-04-01 21:54:42 [SAVED] c:\Webs\tabla-profesores-alumnos\frontend\src\components\Teacher.jsx
 2025-04-01 21:58:43 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\model\profesores.js
 2025-04-01 22:01:56 [SAVED] c:\Webs\tabla-profesores-alumnos\backend\model\alumnos.js
+2025-04-01 22:03:26 [SAVED] c:\Webs\tabla-profesores-alumnos\frontend\src\components\Students.jsx
+2025-04-01 22:03:57 [SAVED] c:\Webs\tabla-profesores-alumnos\frontend\src\components\ImporStudent.jsx

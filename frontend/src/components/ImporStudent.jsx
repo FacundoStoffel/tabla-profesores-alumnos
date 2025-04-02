@@ -26,7 +26,7 @@ export default function ImportStudent({ onClose, onImportSuccess }) {
     const formData = new FormData();
     formData.append("archivo", file);
 
-    const res = await fetch("http://localhost:8080/students/subir_excel", {
+    const res = await fetch("https://tabla-profesores-alumnos.onrender.com/students/subir_excel", {
       method: "POST",
       body: formData,
     });
@@ -67,7 +67,7 @@ export default function ImportStudent({ onClose, onImportSuccess }) {
 
     if (!confirmar) return;
 
-    const res = await fetch("http://localhost:8080/students/guardar_alumnos", {
+    const res = await fetch("https://tabla-profesores-alumnos.onrender.com/students/guardar_alumnos", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ mapping, filename }),
