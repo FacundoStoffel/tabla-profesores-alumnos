@@ -15,7 +15,7 @@ connection.connect((err) => {
 
 const AlumnosModel = {
     insertarAlumnos: (alumnos, callback) => {
-        const sql = `INSERT INTO alumnos (apellido, nombre, nacimiento, dni, localidad, domicilio, curso) VALUES ?`;
+        const sql = `INSERT INTO ALUMNOS (apellido, nombre, nacimiento, dni, localidad, domicilio, curso) VALUES ?`;
         const values = alumnos.map(row => [row.apellido, row.nombre, row.nacimiento, row.dni, row.localidad, row.domicilio, row.curso]);
 
         connection.query(sql, [values], (err, result) => {
@@ -24,7 +24,7 @@ const AlumnosModel = {
     },
 
     getAll: (callback) => {
-        const query = 'SELECT * FROM alumnos';
+        const query = 'SELECT * FROM ALUMNOS';
         connection.query(query, (err, rows) => {
             if (err) {
                 callback({
@@ -39,7 +39,7 @@ const AlumnosModel = {
 
     edit: (alumno, callback) => {
         const query = `
-          UPDATE alumnos 
+          UPDATE ALUMNOS 
           SET apellido = ?, nombre = ?, nacimiento = ?, localidad = ?, domicilio = ?, curso = ? 
           WHERE dni = ?
         `;
@@ -60,7 +60,7 @@ const AlumnosModel = {
       },
 
     delete: (dni, callback) => {
-        const query = 'DELETE FROM alumnos WHERE dni = ?';
+        const query = 'DELETE FROM ALUMNOS WHERE dni = ?';
       
         connection.query(query, dni, (err, rows) => {
           if (err) return callback(err, null);
